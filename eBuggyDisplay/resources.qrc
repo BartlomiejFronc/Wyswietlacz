@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/grey_indicator.png</file>
+        <file>img/interfejs_kierowcy.png</file>
+        <file>img/interfejs_kierowcy.svg</file>
+        <file>img/light_daylight.png</file>
+        <file>img/light_directional.png</file>
+        <file>img/light_emergency.png</file>
+        <file>img/light_long.png</file>
+        <file>img/orange_indicator.png</file>
+        <file>img/ramka.png</file>
+        <file>img/red_indicator.png</file>
+        <file>img/red_indicator_big.png</file>
+    </qresource>
+</RCC>
