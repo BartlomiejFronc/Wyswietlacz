@@ -17,6 +17,14 @@ Aby zainstalować QT creator należy:
      - Ninja 1.10.2
 6. Dokończyć instalację
 # Otwarcie i skompilowanie projektu
-W Qt Creatorze kliknąc Plik->Otwórz plik lub projekt. Nastepnie zaznaczyć cały wszykie pliki w folderze eBuggyDisplay. \
-W lewym dolnym rogu znajdują ikony do uruchomienia, zbudowania i uruchomienia oraz samego zbudawania prgoramu. \
+Aby po raz pierwszy zbudować program należy:
+1. W Qt Creatorze kliknąć Plik->Otwórz plik lub projekt.
+2. Zaznaczyć cały wszykie pliki w folderze eBuggyDisplay.
+3. Jako kompilator zastosować Qt 5.15.2 MinGW 64 bit
+4. Kliknąć praym na projekt i kliknąć "Dodaj istniejące pliki" i wybrać te które się nie dodały:
+   - can.cpp
+   - can.h
+   - resources.qrc
+   - zmienne.h
+5. W lewym dolnym rogu znajdują ikony do uruchomienia, zbudowania i uruchomienia oraz samego zbudawania programu.
 Po wciśnięciu "Rozpicznij Debugowanie projektu startowego" powinien wyświetlić się program.
