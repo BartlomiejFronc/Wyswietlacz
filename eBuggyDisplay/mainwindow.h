@@ -23,5 +23,9 @@ private:
     int timerId;
 protected:
     void timerEvent(QTimerEvent *event);
+private slots:
+    void on_przyczmiany_clicked();
+    void on_konsoladebugu_textChanged();
+    void on_przycdarkmode_clicked(bool checked);
 };
 #endif // MAINWINDOW_H

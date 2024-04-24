@@ -11,5 +11,18 @@
         <file>img/ramka.png</file>
         <file>img/red_indicator.png</file>
         <file>img/red_indicator_big.png</file>
+        <file>img/directional_on.png</file>
+        <file>img/directional-off.png</file>
+        <file>img/interfejs kierowcy techniczny.svg</file>
+        <file>img/interfejs kierowcy.svg</file>
+        <file>img/light_daylight_off.png</file>
+        <file>img/light_emergency1_off.png</file>
+        <file>img/light_emergency1_on.png</file>
+        <file>img/ramkamala.png</file>
+        <file>img/zegar.png</file>
+        <file>img/zegar.svg</file>
+        <file>img/oglolny.png</file>
+        <file>img/directional_on_L.png</file>
+        <file>img/directional-off-L.png</file>
     </qresource>
 </RCC>

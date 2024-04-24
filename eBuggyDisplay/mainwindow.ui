@@ -17,182 +17,571 @@
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);</string>
    </property>
-   <widget class="QLabel" name="speed">
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>30</y>
-      <width>161</width>
-      <height>51</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>400</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>28</pointsize>
-     </font>
+    <property name="currentIndex">
+     <number>1</number>
     </property>
-    <property name="text">
-     <string>0</string>
-    </property>
+    <widget class="QWidget" name="Minfo">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>0</y>
+        <width>631</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/ramka.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="speed">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>20</y>
+        <width>161</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>20</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Speed:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>170</y>
+        <width>111</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_emergency.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="speedbar">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>90</y>
+        <width>421</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="format">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>180</y>
+        <width>191</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_directional.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>170</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_daylight.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>310</y>
+        <width>231</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ERROR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>290</y>
+        <width>111</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/red_indicator_big.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>170</y>
+        <width>151</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_long.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>label_5</zorder>
+     <zorder>speed</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_6</zorder>
+     <zorder>speedbar</zorder>
+     <zorder>label_3</zorder>
+     <zorder>error</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_4</zorder>
+    </widget>
+    <widget class="QWidget" name="Mdrive">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <widget class="QLabel" name="swiatla">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>110</y>
+        <width>131</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_daylight_off.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="directional_right">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>81</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/directional-off.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="directional_left">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>10</y>
+        <width>91</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/directional-off-L.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="emergency">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>200</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/light_emergency1_off.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tarczazegara">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>401</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/zegar.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>201</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/ramkamala.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Drive">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Drive</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Drive_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>240</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Reverse</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Drive_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>280</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Auto</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Drive_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>320</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Parking</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="batterybar">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>330</y>
+        <width>391</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 40);</string>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+      <property name="format">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zegarpredkosc">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>300</y>
+        <width>201</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>28</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>NaN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="error_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>111</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/img/red_indicator_big.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="batterylabel">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>240</y>
+        <width>341</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>Batterylabel</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>10</y>
+        <width>381</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="zegarlayout"/>
+     </widget>
+     <zorder>tarczazegara</zorder>
+     <zorder>swiatla</zorder>
+     <zorder>directional_left</zorder>
+     <zorder>emergency</zorder>
+     <zorder>directional_right</zorder>
+     <zorder>label_8</zorder>
+     <zorder>Drive</zorder>
+     <zorder>Drive_2</zorder>
+     <zorder>Drive_3</zorder>
+     <zorder>Drive_4</zorder>
+     <zorder>batterybar</zorder>
+     <zorder>error_2</zorder>
+     <zorder>batterylabel</zorder>
+     <zorder>gridLayoutWidget</zorder>
+     <zorder>zegarpredkosc</zorder>
+    </widget>
+    <widget class="QWidget" name="Mdebug">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <widget class="QTextBrowser" name="konsoladebugu">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>1091</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(47, 47, 47);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::NoTextInteraction</set>
+      </property>
+     </widget>
+    </widget>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="przyczmiany">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>10</y>
-      <width>631</width>
-      <height>291</height>
+      <x>1190</x>
+      <y>0</y>
+      <width>83</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 166, 166, 255), stop:0.882629 rgba(246, 11, 11, 255), stop:0.892019 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0));</string>
     </property>
     <property name="text">
      <string/>
     </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/ramka.png</pixmap>
-    </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="przycdarkmode">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>190</y>
-      <width>191</width>
-      <height>91</height>
+      <x>1190</x>
+      <y>80</y>
+      <width>83</width>
+      <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(64, 64, 64, 255), stop:0.86385 rgba(29, 29, 29, 255), stop:1 rgba(255, 255, 255, 0));
+selection-background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(167, 167, 167, 255), stop:0.840376 rgba(114, 114, 114, 255), stop:0.910798 rgba(255, 255, 255, 0));</string>
     </property>
     <property name="text">
      <string/>
     </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/light_directional.png</pixmap>
+    <property name="checkable">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>180</y>
-      <width>151</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/light_long.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>180</y>
-      <width>161</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/light_daylight.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>830</x>
-      <y>180</y>
-      <width>111</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/light_emergency.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="speedbar">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>100</y>
-      <width>421</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>24</number>
-    </property>
-    <property name="format">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>30</y>
-      <width>151</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Speed:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="error">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>320</y>
-      <width>231</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>ERROR</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>300</y>
-      <width>111</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="resources.qrc">:/img/red_indicator_big.png</pixmap>
-    </property>
-   </widget>
-   <zorder>label</zorder>
-   <zorder>speed</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>speedbar</zorder>
-   <zorder>label_7</zorder>
-   <zorder>error</zorder>
-   <zorder>label_2</zorder>
   </widget>
  </widget>
  <resources>

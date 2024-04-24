@@ -46,6 +46,9 @@ else()
             ${PROJECT_SOURCES}
             can.h can.cpp
             resources.qrc
+            zegar.h zegar.cpp
+
+
 
 
         )
